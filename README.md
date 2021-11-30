@@ -18,3 +18,4 @@ Le concept permet aux utilisateurs de composer leur propre repas en reduisant le
 - Les pages devront passer au validator W3C en HTML et CSS sans erreur.
 - Le site doit être parfaitement compatible avec les dernieres versions desktop de Chrome et Firefox.
 
+![acceuilomyfood](https://user-images.githubusercontent.com/89019397/144074937-119eb64c-0f1d-4a45-b256-02db0ee33487.png)
