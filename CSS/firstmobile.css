@@ -1,0 +1,353 @@
+@media screen and (max-width: 768px){
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400;500&display=swap');
+body{
+margin: 0px;
+padding: 0px;
+min-width: 300px;
+}    
+/*index-html  page acceuil-------------------------------------------------*/
+
+/*presentation*/
+.localisation{
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-size: 25px;
+margin:0 ;
+}
+
+/*container_reservation*/
+.container_reservation{
+display: flex;
+width:auto ;
+background-color:var(--lightgrey);
+background-image: none;
+height:350px;
+margin: 0;
+}
+.reservation_menu, .decouvrir{
+margin: 0;
+padding: 25px;
+color: black;
+font-family:"roboto" ;
+}
+/*container_fonctionnement-----------------------------------*/
+.container_fonctionnement {
+padding:0 ;
+margin:0 ;  
+margin-bottom:25px ;
+margin-left: 10px;
+width: auto;
+height: auto;
+}
+.container_fonctionnement ol {
+flex-direction: column;
+padding:0 ;
+margin:0 ;
+}
+.fonctionnement li{
+display: flex;
+justify-content: space-evenly;
+width:90% ;
+margin-bottom: 25px;
+background-color:var(-concrete);
+}
+
+.fonctionnement i{
+display: flex;
+padding: 0;
+font-size:20px ;
+
+color: black;
+}
+/*compteur fonctionnement ol pages d'aceuil------*/
+.fonctionnement ol {
+counter-reset: section;  /*initialise et nomme le compteur*/
+}
+.fonctionnement .compteur{
+list-style-type: none; /* on incremente le comteur a chaque li*/
+counter-increment:section ;
+}
+.fonctionnement .compteur:before{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: -10%; /*(distance compteur)*/
+content: counter(section); /*affiche compteur*/
+color: white;
+width: 25px;
+height:25px;
+border-radius: 50%;
+background-color:#9356dc;
+}
+.fonctionnement li:hover{
+background-color:#e9d9fa ;
+cursor:pointer ;
+}
+.fonctionnement i:hover{
+color: #9356dc; 
+}
+
+/*container_restaurant-----------------------------------------------*/
+.container_restaurant{
+display: flex;
+flex-direction: column; 
+width:auto;
+height:auto ;
+background-color:var(--lightgrey);
+padding:0 ;
+margin: 0;
+}
+.restaurant_menus{
+display: flex;
+flex-direction: column;
+width:100% ;
+height: 100% ;
+}
+.titre_h2{
+margin-top: 20px;
+margin-bottom: 30px;
+margin-left: 15px;
+font-weight: bold;
+}
+/*carte1 3 4 */
+.carte a figure{
+background-color:#ffff ;
+height: 60%;
+width:90%;
+margin-left: 15px;
+border-radius: 15px 15px 15px 15px;
+box-shadow:var( --boxshadow) ;
+margin-bottom: 50px;
+
+}.carte  a img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 15px 15px 0px 0px;
+object-position: center bottom;
+}
+.carte a figcaption, .carte2 a figcaption{
+padding-top:10px ;
+height:80px;
+}
+/*carte2*/
+.carte2 a figure{
+background-color:#ffff ;
+height: 60%;
+width:90%;
+margin-left: 15px;
+border-radius: 15px 15px 15px 15px;
+box-shadow:var( --boxshadow) ;
+margin-bottom: 50px;
+}
+.carte2  a img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 15px 15px 0px 0px;
+object-position: center bottom;
+}
+
+.titre_h3 , p{
+margin: 0;
+margin-left:10px ;
+}
+/*-heart acceuil place*/
+.heart{
+position:static;
+color: black ;
+font-size: 25px;
+margin-left:85% ;
+margin-top:-10% ;
+}
+.fa-heart::before {
+content: "\f004"; /* code de l icone*/
+font-weight: 400;
+transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+font-weight: bold;
+color: #ff79da;
+cursor: pointer;
+}
+/*titre nouveau mis dans animation*/
+.nouveau{
+position:relative;
+border-radius: 3px;
+background-color: #99e2d0;
+color: #217460;
+padding: 5px;
+top: 3rem;
+right: 10px;
+margin-left: 70%;
+margin-top:15% ;
+}
+/*menu des restaurant 4 pageshtml---------------------------------------------------------------*/
+.menu_presentation{
+display: flex;
+position:absolute;  
+margin-top: 40px; 
+z-index: 1;
+width:auto;
+height:auto;
+}
+.presentation_img{
+position: relative;
+display: flex;
+flex-direction: column;
+width: auto;
+height:auto;
+}
+.presentation_img img,.presentation_img .img2{
+position: relative; 
+display: block;
+display:flex ;
+flex-direction: column;
+width:100%;
+height:100% ;
+object-fit: cover;
+object-position:center;
+z-index: 1;
+}
+.présentation_menu_global{
+position:relative;
+z-index: 2;
+top:250px;
+border-radius:30px  30px 0px 0px ;
+}
+.presentation_menu{
+display: flex;
+margin-top:-60px; /* hauteur */
+align-items: center;
+margin-right:10px ;
+margin-left:10px ;
+}
+
+.titre_m{
+font-family:"shrikhand", sans sherif ;
+padding-left:5px ;
+margin-bottom: 20px;
+font-size: 25px;
+}
+/*heart des 4 pages*/
+.heart_menu{
+position: relative;
+display: flex;
+align-items: center;
+color: black ;
+font-size: 25px;
+margin-top:5% ;
+margin-left: 30%;
+}
+.far-heart::before {
+content: "\f004"; /* code de l icone*/
+font-weight: 400;
+transition: color 1s ease-out;
+}
+.far-heart:hover::before{
+font-weight: bold;
+color: #ff79da;
+cursor: pointer;
+}
+.bloc{
+display: flex;
+flex-direction: column;
+width: 90%;
+margin-bottom: 0px 0px 0px 50px;
+margin-left:15px ;
+margin-right:15px ;
+}
+/*titre entree trait vert*/
+.titre_entree_plat_dessert{
+width:45px ;
+border-bottom: 3px solid #99e2d0;
+line-height:50px ;
+margin: 15px ;
+top:15px ;
+}
+
+.bloc_btn{
+display: flex;
+flex-direction: column;
+width: auto;
+height:auto ;
+margin-left:10px ;
+}
+.button{
+display: flex;
+flex-direction: column;
+background-color:whitesmoke;
+border-radius:15px 15px 15px 15px ;
+box-shadow:5px 3px 3px  rgb(163, 159, 159);
+margin-top: 20px;
+padding-left: 10px;
+height:50%;
+}
+/*titre_menu*/
+.titre_menu{
+width:auto;
+font-size:20px;/* varaible*/
+padding: 0;
+}
+.titre_p{
+font-size:15px ;
+font-weight: normal;
+padding: 5px;
+}
+.ensemble_menu{
+display: flex;
+font-weight: 900;
+overflow: hidden;/* faire disparaitre le dive cercle qui sort du parent*/
+}
+.menu_description{
+display: flex;
+flex-direction: column;
+padding: 16px;
+}
+span.prix{
+display: flex;
+align-items: flex-end;
+margin-left: auto;
+font-weight: 900;
+padding: 16px;
+}
+/*titre_p* a mettre dans une div ensemble menu*/
+.button_cercle_animation{
+display: flex;
+align-items: center;
+background-color: #99e2d0;
+margin-right: -60px;
+width:60px ;
+border-radius:0px 15px 15px 0px ;
+transition: margin-right 0.6s;
+}.button_cercle_animation:hover{
+margin: 0;
+cursor: pointer;
+}
+/*ajout d'une class button animation cercle*/
+.cercle .fa-check-circle{
+display:flex;
+color:#ffff ;
+font-size: 25px;
+padding-left: 15px;
+}
+.cercle .fa-check-circle{
+animation-name:rotate-center ;
+animation: rotate-center 0.6s  infinite;
+animation-duration: 3s;
+}
+.btn_bas{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+.input .btn{
+cursor: pointer;
+}
+}

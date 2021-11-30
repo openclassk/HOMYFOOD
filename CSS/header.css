@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+/*header*/
+header{
+/* element positionner naturel*/
+position: relative;
+font-family:"shrikhand", cursive;
+}
+.header_logo{
+padding: 16px 0 0 0 ;
+text-align:center ;
+box-shadow: 10px 10px 3px 1px  rgb(82, 77, 77);
+}
+.logo_image{
+width: 250px;
+height:45px ;
+margin-bottom:15PX ;
+}
+/*page index html--------------------------*/
+.container_presentation{
+width:auto ;
+height:70px;
+justify-content: center;
+}
+.localisation{
+width: 100%;
+height:100%; 
+background-color:rgb(238, 233, 233);
+
+}
+.localisation .icon1{
+    color: black;
+font-size: 25px;
+margin-right:10px ;
+margin-left:25% ;
+}
+.localisation_text{
+height: 50px;
+background-color:rgb(238, 233, 233);
+border:transparent;
+font-size:var(--font-size3);
+font-weight: bold;
+
+}
+/*container_reservation*/
+.container_reservation{
+width:auto ;
+text-align: center;
+background-color:var(--lightgrey);
+height:350px;
+}
+.reservation_menu, .decouvrir{
+margin: 0;
+padding: 25px;
+color: black;
+font-family:"roboto" ;
+}
+
+/*icone retour a la page acceuil*/
+.retour_page{
+position:absolute;
+top:25px;
+left:16px;
+}
+main{
+padding: 0px;
+}
