@@ -17,3 +17,4 @@ Le concept permet aux utilisateurs de composer leur propre repas en reduisant le
 - Pour l'ensemble du site être responsive sur mobile, tablette et desktop.
 - Les pages devront passer au validator W3C en HTML et CSS sans erreur.
 - Le site doit être parfaitement compatible avec les dernieres versions desktop de Chrome et Firefox.
+
