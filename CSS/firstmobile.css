@@ -276,7 +276,7 @@ width: auto;
 height:auto ;
 margin-left:10px ;
 }
-.button{
+.button, .button_plat, .button_dessert{
 display: flex;
 flex-direction: column;
 background-color:whitesmoke;
@@ -285,6 +285,16 @@ box-shadow:5px 3px 3px  rgb(163, 159, 159);
 margin-top: 20px;
 padding-left: 10px;
 height:50%;
+}
+.ensemble_menu{
+display: flex;
+font-weight: 900;
+overflow: hidden;/*element disparait*/
+}
+.menu_description{
+display: flex;
+flex-direction: column;
+padding: 16px;
 }
 /*titre_menu*/
 .titre_menu{
@@ -297,16 +307,6 @@ font-size:15px ;
 font-weight: normal;
 padding: 5px;
 }
-.ensemble_menu{
-display: flex;
-font-weight: 900;
-overflow: hidden;/* faire disparaitre le dive cercle qui sort du parent*/
-}
-.menu_description{
-display: flex;
-flex-direction: column;
-padding: 16px;
-}
 span.prix{
 display: flex;
 align-items: flex-end;
@@ -314,30 +314,29 @@ margin-left: auto;
 font-weight: 900;
 padding: 16px;
 }
-/*titre_p* a mettre dans une div ensemble menu*/
 .button_cercle_animation{
 display: flex;
 align-items: center;
 background-color: #99e2d0;
-margin-right: -60px;
+margin-right: -60px;/*meme largeur que la width*/
 width:60px ;
 border-radius:0px 15px 15px 0px ;
-transition: margin-right 0.6s;
-}.button_cercle_animation:hover{
-margin: 0;
-cursor: pointer;
 }
-/*ajout d'une class button animation cercle*/
+/*modif hover sur la vignette*/
+.ensemble_menu:hover,
+.button_cercle_animation:hover
+{
+margin-right:60px;
+cursor: pointer;
+overflow:visible;
+transition: margin-right 0.7s;
+}
+
 .cercle .fa-check-circle{
 display:flex;
 color:#ffff ;
 font-size: 25px;
-padding-left: 15px;
-}
-.cercle .fa-check-circle{
-animation-name:rotate-center ;
-animation: rotate-center 0.6s  infinite;
-animation-duration: 3s;
+padding-left: 15px;  
 }
 .btn_bas{
 display: flex;
