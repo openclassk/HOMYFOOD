@@ -105,50 +105,6 @@
            transform: scale(0);
         }
         }
-    
-
-/*heart a revoir animation page accueil mobile*********************************
-.heart {
-    position:relative;
-    margin-top:20% ;
-    color: black;
-    }
-.fa-heart {
-    position:relative ;
-    margin-left: 85%;
-    bottom: 120px;
-    font-size: 25px;
-    color:black;
-}
-.fa-heart::before {
-    content: "\f004"; /* code de l icone
-    font-weight: 400;
-    transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-font-weight: bold;
-  color: #ff79da;
-    cursor: pointer;
-}
-/* heart des 4 pages html version mobile---------------------------------------
-.heart_menu {
-    position:absolute;
-    margin-left:80% ;
-    margin-top:55% ;
-    color: black;
-    }
-    .fa-heart::before {
-    content: "\f004"; /* code de l icone mobile
-    font-weight: 400;
-    transition: color 1s ease-out;
-    }
-    .fa-heart:hover::before{
-    font-weight: bold;
-      color: #ff79da;
-        cursor: pointer;
-    }  
-/*heart des 4 pages html version desktop----------------------*/  
-
 
 /* nouveau_titre*/
 .nouveau{
@@ -234,6 +190,6 @@ animation: rotation(360deg);
     transform: rotate(360deg);
 }
 @keyframes rotation{
-        0%{ transform: rotate(-270deg); }
-        100%{ transform: rotate(0deg); }
+        0%{ transform: rotate(0deg); }
+        100%{ transform: rotate(360deg); }
     }

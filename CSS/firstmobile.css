@@ -4,10 +4,11 @@
 body{
 margin: 0px;
 padding: 0px;
-min-width: 300px;
+min-width:300px;
 }    
-/*index-html  page acceuil-------------------------------------------------*/
+/* version_firstmobile*/
 
+/*index-html  page acceuil-------------------------------------------------*/
 /*presentation*/
 .localisation{
 display: flex;
@@ -38,12 +39,11 @@ font-family:"roboto" ;
 padding:0 ;
 margin:0 ;  
 margin-bottom:25px ;
-margin-left: 10px;
 width: auto;
 height: auto;
 }
 .container_fonctionnement ol {
-flex-direction: column;
+
 padding:0 ;
 margin:0 ;
 }
@@ -58,9 +58,8 @@ background-color:var(-concrete);
 .fonctionnement i{
 display: flex;
 padding: 0;
-font-size:20px ;
-
 color: black;
+font-size:20px ;
 }
 /*compteur fonctionnement ol pages d'aceuil------*/
 .fonctionnement ol {
@@ -99,10 +98,15 @@ height:auto ;
 background-color:var(--lightgrey);
 padding:0 ;
 margin: 0;
+margin-right:15px ;
 }
 .restaurant_menus{
 display: flex;
 flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin: 0;
+padding:0 ;
 width:100% ;
 height: 100% ;
 }
@@ -116,8 +120,7 @@ font-weight: bold;
 .carte a figure{
 background-color:#ffff ;
 height: 60%;
-width:90%;
-margin-left: 15px;
+width:300px;
 border-radius: 15px 15px 15px 15px;
 box-shadow:var( --boxshadow) ;
 margin-bottom: 50px;
@@ -137,8 +140,9 @@ height:80px;
 .carte2 a figure{
 background-color:#ffff ;
 height: 60%;
-width:90%;
-margin-left: 15px;
+width:300px;
+margin:0 ;
+padding: 0;
 border-radius: 15px 15px 15px 15px;
 box-shadow:var( --boxshadow) ;
 margin-bottom: 50px;
@@ -150,18 +154,26 @@ object-fit: cover;
 border-radius: 15px 15px 0px 0px;
 object-position: center bottom;
 }
-
-.titre_h3 , p{
-margin: 0;
-margin-left:10px ;
+.carte .titre_h3, 
+.carte2 .titre_h3
+{
+padding: 10px 0px 0px 10px;
+margin-top: 0px;
+margin-bottom: 0;
 }
+.carte .choix, .carte2 .choix{
+    padding-left: 10px;
+    margin:0 ;
+    margin-top: 10px;
+    }
+
 /*-heart acceuil place*/
 .heart{
 position:static;
 color: black ;
 font-size: 25px;
 margin-left:85% ;
-margin-top:-10% ;
+margin-top:-18% ;
 }
 .fa-heart::before {
 content: "\f004"; /* code de l icone*/
@@ -225,14 +237,13 @@ align-items: center;
 margin-right:10px ;
 margin-left:10px ;
 }
-
 .titre_m{
 font-family:"shrikhand", sans sherif ;
 padding-left:5px ;
 margin-bottom: 20px;
 font-size: 25px;
 }
-/*heart des 4 pages*/
+/*heart des 4 pages_mobile*/
 .heart_menu{
 position: relative;
 display: flex;

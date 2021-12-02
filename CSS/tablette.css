@@ -1,87 +1,62 @@
+@media screen and (max-width: 1024px){
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400;500&display=swap');
 
 body{
 margin: 0px;
 padding: 0;
 font-family:"roboto", sans sherif ;
 max-height: 100%;
-min-width: 300px;
-max-width: 1950px;
-
+min-width: 768px;
+max-width: 1024px;
 }
-/*version_desktop*/
-/*presentation*/
-.localisation .icon1{
-color: black;
-font-size: 25px;
-margin-right:10px ;
-margin-left:45% ;
-}
-/* reservation*/
-.container_reservation{
-width:auto ;
-text-align: center;
-background-image:url("../images/photo_fond_restaurant.jpg");
-height:350px;
-}
-
-.reservation_menu,.decouvrir{
-color: whitesmoke;
-font-size: var(--font-size3);
-}
-
+/*version_tablette*/
 /*container_fonctionnement*/
-.container_fonctionnement{
-height: 300px;
-align-items: center;
-width: auto;
-height: auto;
-margin-bottom: 50px;
-
-}
-.container_fonctionnement ol{
-display: flex;
-justify-content: space-evently;
-align-items:center ;
-width: 80%;
-height: auto;
-margin-left:50px ;
-
-}
-.fonctionnement li{
-display: flex;
-justify-content:center;
-align-items: center;
-background-color:var(--concrete) ;
-border-radius: 15px;
-height: 60px;
-width: 60%;
-margin-right: 30px;
-box-shadow: var(--boxshadow);
-
-}
-.fonctionnement i{
-display: flex;
-padding:0;
-margin-left:25px ;
-font-size:20px ;
-color: grey;
-}
+.container_fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 ;
+    margin:0 ;  
+    margin-bottom:25px ;
+    margin-left: 10px;
+    width: auto;
+    height: auto;
+    }
+    .container_fonctionnement ol {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 ;
+    margin:0 ;
+    margin-right:0 ;
+    }
+    .fonctionnement li{
+    display: flex;
+    justify-content: space-evenly;
+    width:100% ;
+    margin-bottom: 25px;
+    background-color:var(-concrete);
+    }
+    .fonctionnement i{
+    display: flex;
+    padding: 0;
+    font-size:20px ;
+    color: black;
+    }
 /*compteur fonctionnement ol pages d'aceuil------*/
 .fonctionnement ol {
-counter-reset: section;  /*initialise et nomme le compteur*/
+counter-reset: chiffre;  /*initialise et nomme le compteur*/
 }
 .fonctionnement .compteur{
 list-style-type: none; /* on incremente le comteur a chaque li*/
-counter-increment:section ;
+counter-increment:chiffre ;
 }
 .fonctionnement .compteur:before{
 display: flex;
 align-items: center;
 justify-content: center;
-content: counter(section); /*affiche compteur*/
-margin-left: -48%;/*distance compteur*/
+content: counter(chiffre); /*affiche compteur*/
+margin-left: -10%;/*distance compteur*/
 color: white;
 width: 25px;
 height:25px;
@@ -103,7 +78,7 @@ margin-right:15px ;
 /*container_restaurant----------------------*/
 .container_restaurant{
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
 width:auto;
 height:auto ;
 background-color:var(--lightgrey);
@@ -112,8 +87,8 @@ margin: 0;
 }
 .restaurant_menus{
 display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+flex-direction: column;
+justify-content: space-evenly;
 align-items: center;
 width:100%;
 height:100% ;
@@ -131,8 +106,8 @@ font-weight: bold;
 .carte a figure{
 background-color:#ffff ;
 padding:0 ;
-height: 290px;
-width:300px;
+height: 270;
+width:500px;
 border-radius: 15px 15px 15px 15px;
 box-shadow:var( --boxshadow) ;
 }
@@ -149,12 +124,13 @@ height:70px;
 /*carte2*/
 .carte2 a figure{
 background-color:#ffff ;
-height: 290px;
-width:300px;
+height: 270px;
+width:500px;
 margin:0 ;
 padding:0 ;
 border-radius: 15px 15px 15px 15px;
 box-shadow:var( --boxshadow) ;
+margin-bottom: 35px;
 }
 .carte2  a img{
 width: 100%;
@@ -320,6 +296,8 @@ margin-left: auto;
 font-weight: 900;
 padding: 16px;
 }
+
+/*titre_p* a mettre dans une div ensemble menu*/
 .button_cercle_animation{
 display: flex;
 align-items: center;
@@ -327,17 +305,17 @@ background-color: #99e2d0;
 margin-right: -60px;
 width:60px ;
 border-radius:0px 15px 15px 0px ;
- transition: transform 200ms ;
+transition: margin-right 0.6s;
 }
 
 /*modif hover sur la vignette*/
-.ensemble_menu:hover:hover,
+.ensemble_menu:hover,
 .button_cercle_animation:hover
 {
-cursor: pointer;
 margin-right:60px;
+cursor: pointer;
 overflow:visible;
-transition: margin-right 400ms;
+transition: margin-right 0.7s;
 }
 /*ajout d'une class button animation cercle*/
 .cercle .fa-check-circle{
@@ -361,4 +339,5 @@ padding-bottom: 50px;
 }
 .input.btn{
     cursor: pointer;
+}
 }

@@ -16,7 +16,13 @@ footer{
     flex-direction: column;
     margin:0 ;
     top: -4px;
+    margin: 0;
     }
+footer h1, .footer_restaurant .h1{
+font-family:"shrikhand", cursive;
+padding-left: 15px;
+font-size:var(--font-size1) 
+}
 /* footer des 4 pages*/
 .footer_restaurant{
     position:relative;
@@ -25,32 +31,33 @@ footer{
     display: flex;
     flex-direction: column;
     width:auto ;
-    height:auto ;
+    height:100%;
     margin:0 ;
     top:250px;
-}
-footer h1{
-font-family:"shrikhand", cursive;
-padding-left: 15px;
-font-size:var(--font-size1) 
 }
 
 .footer_items1  li, .footer_items  li {
    display: flex;
    align-items: center;
    height: 30px;
+   padding-right:10px ;
+   padding-left: 10px;
+}
+ .fas.fa-utensils {
+    margin-right: 15px;
+}
+.fas.fa-hands-helping { 
+ margin-right: 9px;
 }
 
-
 .footer_items{
-   padding-left:0;
-    margin-bottom: 25px;
+   padding-left:15px;
 }
 .footer_items ul{
     padding:0;
 }
 .footer_items a{
-    padding-left:15px ;
+    padding-left:0px ;
 }
 
  
