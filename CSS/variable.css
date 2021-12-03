@@ -7,7 +7,13 @@
 --colorclouds:#ecf0f1;
 --concrete:#f3f1f1;
 --colorfonctionnementli:#f6f6f6;
-}    
+}   
+
+/*couleur gradient*/
+:root{
+    --lineargradienttablette:linear-gradient(to top,rgba(0, 255, 64, 0.733), 
+    rgba(0,0,255,0.5));
+}
 /*taille*/   
 :root{
 --font-size1:18px;

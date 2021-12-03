@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
 body{
     margin:0 ;
+    padding:0 ;
     min-width: 300px;
     max-width:1900px ;
+    height:auto ;
 }
-/* footer page d'accueil*/
+
+
 /*footer page d'acceuil*/
 footer{
 
@@ -16,14 +19,29 @@ footer{
     flex-direction: column;
     margin:0 ;
     top: -4px;
-    margin: 0;
     }
-footer h1, .footer_restaurant .h1{
+ /*footer_tablette*/
+.footer_restaurant_tab{
+    position:relative;
+    background-color:rgb(53, 51, 51);
+    color:#ffff ;
+    display: flex;
+    flex-direction: column;
+    width:auto ;
+    height:auto;
+    margin:0 ;
+    top:-70px;
+}
+   
+footer h1, .footer_restaurant h1{
 font-family:"shrikhand", cursive;
 padding-left: 15px;
 font-size:var(--font-size1) 
 }
 /* footer des 4 pages*/
+
+
+/*footer_mobile*/
 .footer_restaurant{
     position:relative;
     background-color:rgb(53, 51, 51);
@@ -33,9 +51,8 @@ font-size:var(--font-size1)
     width:auto ;
     height:100%;
     margin:0 ;
-    top:250px;
+    top:210px;
 }
-
 .footer_items1  li, .footer_items  li {
    display: flex;
    align-items: center;

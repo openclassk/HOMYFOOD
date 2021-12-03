@@ -74,15 +74,12 @@
     }
     100%{
         transform: rotate(360deg);
-      
     }
     }
     /*-------*/
     @keyframes loader_spiner3{
     0%{
-      
         transform: rotate(0deg);
-       
     }
     100%{
         transform: rotate(360deg);
@@ -181,15 +178,12 @@
     } 
 }
 /*animation menu rotate*/
-.button_cercle_animation{
-animation: rotation(360deg);
+
+.cercle{
+transform: rotate(360deg);
+animation: spin 3s linear infinite;
 }
-.cercle .fa-check-circle{
-    animation-name:rotation ;
-    animation: rotation 1s ease-in-out infinite linear;
-    transform: rotate(360deg);
-}
-@keyframes rotation{
+@keyframes spin{
         0%{ transform: rotate(0deg); }
         100%{ transform: rotate(360deg); }
     }

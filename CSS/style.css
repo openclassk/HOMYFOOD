@@ -5,9 +5,8 @@ body{
 margin: 0px;
 padding: 0;
 font-family:"roboto", sans sherif ;
-max-height: 100%;
-min-width: 300px;
 max-width: 1950px;
+min-width:992px ;
 
 }
 /*version_desktop*/
@@ -210,7 +209,7 @@ width: auto;
 height:auto;
 object-fit: cover;
 }
-.presentation_img img, .presentation_img .img2{
+.presentation_img .img1, .presentation_img .img2{
 display:flex ;
 flex-direction: column;
 width:100% ;
@@ -237,7 +236,7 @@ margin-top:40px ;
 padding-left: 50px;
 font-size: 30px;
 font-family:"shrikhand", sans sherif ;
-color:red;
+color: black;
 }
 /*heart des 4 pages_style_css*/
 .heart_menu{
@@ -247,7 +246,7 @@ align-items: center;
 color: black ;
 font-size: 25px;
 top:10% ;
-margin-left: 5%;
+margin-left: 50%;
 }
 .far-heart::before {
 content: "\f004"; /* code de l icone*/
