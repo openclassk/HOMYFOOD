@@ -103,7 +103,7 @@ counter-increment:section ;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-left: -10%; /*(distance compteur)*/
+margin-left: -13%; /*(distance compteur cercle violet)*/
 content: counter(section); /*affiche compteur*/
 color: white;
 width: 25px;
@@ -166,32 +166,14 @@ object-position: center bottom;
 padding-top:10px ;
 height:80px;
 }
-/*carte2*/
-.carte2 a figure{
-background-color:#ffff ;
-height: 60%;
-width:300px;
-margin:0 ;
-padding: 0;
-border-radius: 15px 15px 15px 15px;
-box-shadow:var( --boxshadow) ;
-margin-bottom: 50px;
-}
-.carte2  a img{
-width: 100%;
-height: 200px;
-object-fit: cover;
-border-radius: 15px 15px 0px 0px;
-object-position: center bottom;
-}
-.carte .titre_h3, 
-.carte2 .titre_h3
+
+.carte .titre_h3
 {
 padding: 10px 0px 0px 10px;
 margin-top: 0px;
 margin-bottom: 0;
 }
-.carte .choix, .carte2 .choix{
+.carte .choix{
     padding-left: 10px;
     margin:0 ;
     margin-top: 10px;
@@ -224,7 +206,7 @@ color: #217460;
 padding: 5px;
 top: 3rem;
 right: 10px;
-margin-left: 70%;
+margin-left: 68%;
 margin-top:15% ;
 }
 /*menu des restaurant 4 pageshtml---------------------------------------------------------------*/
@@ -359,7 +341,6 @@ font-weight: 900;
 padding: 16px;
 }
 .button_cercle_animation{
-display: flex;
 align-items: center;
 background-color: #99e2d0;
 margin-right: -60px;/*meme largeur que la width*/
