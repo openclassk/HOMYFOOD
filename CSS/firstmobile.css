@@ -123,6 +123,8 @@ color: #9356dc;
 .container_restaurant{
 display: flex;
 flex-direction: column; 
+justify-content: center;
+align-items: center;
 width:auto;
 height:auto ;
 background-color:var(--lightgrey);
@@ -146,11 +148,11 @@ margin-bottom: 30px;
 margin-left: 15px;
 font-weight: bold;
 }
-/*carte1 3 4 */
+/*carte1 2 3 4 */
 .carte a figure{
 background-color:#ffff ;
 height: 60%;
-width:300px;
+width:350px;
 border-radius: 15px 15px 15px 15px;
 box-shadow:var( --boxshadow) ;
 margin-bottom: 50px;
@@ -348,21 +350,23 @@ width:60px ;
 border-radius:0px 15px 15px 0px ;
 }
 /*modif hover sur la vignette*/
-.ensemble_menu:hover,
-.button_cercle_animation:hover
-{
-margin-right:60px;
+.menu_description:hover,
+.button_cercle_animation:hover{
+margin-right:0px;
 cursor: pointer;
 overflow:visible;
-transition: margin-right 0.7s;
+transition: margin-right 2s ease-in-out;
 }
-
-.cercle .fa-check-circle{
-display:flex;
+.cercle{
+position:relative;
 color:#ffff ;
 font-size: 25px;
-padding-left: 15px;  
+justify-content: center;
+align-items: center;
+margin:0 ;
+padding: 0;
 }
+
 .btn_bas{
 display: flex;
 align-items: center;
