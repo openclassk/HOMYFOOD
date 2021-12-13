@@ -25,18 +25,18 @@ justify-content: center;
 .localisation{
 width: 100%;
 height:100%; 
-background-color:rgb(238, 233, 233);
+background-color:var( --colorbackgroundheader);
 
 }
 .localisation .icon1{
-    color: black;
+color: var(--colorblack);
 font-size: 25px;
 margin-right:10px ;
 margin-left:25% ;
 }
 .localisation_text{
 height: 50px;
-background-color:rgb(238, 233, 233);
+background-color:var(--colorbackgroundheader);
 border:transparent;
 font-size:var(--font-size3);
 font-weight: bold;
@@ -52,7 +52,7 @@ height:350px;
 .reservation_menu, .decouvrir{
 margin: 0;
 padding: 25px;
-color: black;
+color: var(--colorblack);
 font-family:"roboto" ;
 }
 

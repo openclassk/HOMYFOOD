@@ -12,7 +12,7 @@ min-width:992px ;
 /*version_desktop*/
 /*presentation*/
 .localisation .icon1{
-color: black;
+color: var(--colorblack);
 font-size: 25px;
 margin-right:10px ;
 margin-left:45% ;
@@ -26,7 +26,7 @@ height:350px;
 }
 
 .reservation_menu,.decouvrir{
-color: whitesmoke;
+color: var(--colorwhitesmoke);
 font-size: var(--font-size3);
 }
 
@@ -65,7 +65,7 @@ display: flex;
 padding:0;
 margin-left:25px ;
 font-size:20px ;
-color: grey;
+color:var(--colorgrey);
 }
 /*compteur fonctionnement ol pages d'aceuil------*/
 .fonctionnement ol {
@@ -81,19 +81,19 @@ align-items: center;
 justify-content: center;
 content: counter(section); /*affiche compteur*/
 margin-left: -48%;/*distance compteur*/
-color: white;
+color: var(--colorwhite);
 width: 25px;
 height:25px;
 border-radius: 50%;
-background-color:#9356dc;
+background-color:var(--violet);
 }
 
 .fonctionnement li:hover{
-background-color:#e9d9fa ;
-cursor:pointer ;
+background-color:var(-backgroundlihover) ;
+cursor:var(--cursor);
 }
 .fonctionnement i:hover{
-color: #9356dc; 
+color:var(--violet); 
 }
 .fonctionnement i{
 margin-right:15px ;
@@ -128,7 +128,7 @@ font-weight: bold;
 }
 /*carte 1-2-3-4 */
 .carte a figure{
-background-color:#ffff ;
+background-color:var(--colorwhite);
 padding:0 ;
 height: 290px;
 width:300px;
@@ -160,8 +160,8 @@ margin-top: 10px;
 .nouveau{
     position:relative;
     border-radius: 3px;
-    background-color: #99e2d0;
-    color: #217460;
+    background-color: var(--lightvert);
+    color:var(--vertpromo);
     padding: 5px;
     top: 3rem;
     right: 10px;
@@ -175,7 +175,7 @@ position:relative;
 font-size:25px ;
 left: 85%;
 margin-top:-18%;
-color: black;
+color:var(--colorblack);
 }
 .fa-heart::before {
 content: "\f004"; /* code de l icone*/
@@ -184,8 +184,8 @@ transition: color 1s ease-out;
 }
 .fa-heart:hover::before{
 font-weight: bold;
-color: #ff79da;
-cursor: pointer;
+color:var(--colorheart);
+cursor: var(--cursor);
 }
 /* menu restaurant des 4 pages---------------------------------------*/
 .menu_presentation{
@@ -229,14 +229,14 @@ margin-top:40px ;
 padding-left: 50px;
 font-size: 30px;
 font-family:"shrikhand", sans sherif ;
-color: black;
+color: var(--colorblack);
 }
 /*heart des 4 pages_style_css*/
 .heart_menu{
 position: relative;
 display: flex;
 align-items: center;
-color: black ;
+color: var(--colorblack) ;
 font-size: 25px;
 top:10% ;
 margin-left: 50%;
@@ -248,8 +248,8 @@ transition: color 1s ease-out;
 }
 .far-heart:hover::before{
 font-weight: bold;
-color: #ff79da;
-cursor: pointer;
+color: var(--colorheart);
+cursor:var(--cursor);
 }
 .bloc{
 width: 70%;
@@ -280,7 +280,7 @@ margin-left:10px ;
 .button, .button_plat, .button_dessert{
 width: 100%;
 height:70px ;
-background-color:#ffff ;
+background-color:var(--colorwhite);
 border-radius:15px 15px 15px 15px ;
 margin-top: 20px;
 height:auto ;
@@ -313,28 +313,29 @@ font-weight: 900;
 padding: 16px;
 }
 .button_cercle_animation{
- /*display: flex;*/
-align-items: center;
-background-color: #99e2d0;
+ position: relative;
+background-color:var(--lightvert);
 margin-right: -60px;
 width:60px ;
 border-radius:0px 15px 15px 0px ;
- transition: transform 200ms ;
 }
 
-/*modif hover sur la vignette*/
- .ensemble_menu:hover:hover,
-.button_cercle_animation:hover
+/* hover sur la vignette*/
+ .ensemble_menu:hover
 {
-cursor: pointer;
+cursor:var(--cursor);
 margin-right:60px;
 overflow:visible;
 transition: margin-right 400ms;
 }
+.button_cercle_animation{
+    overflow: hidden;
+    margin-right: -60px;
+}
 /*ajout d'une class button animation cercle*/
 .cercle .fa-check-circle{
 display:flex;
-color:#ffff ;
+color:var(--colorwhite);
 font-size: 25px;
 padding-left: 15px;
 margin-top: 30px;
@@ -348,5 +349,5 @@ padding-top: 50px;
 padding-bottom: 50px;
 }
 .input.btn{
-    cursor: pointer;
+    cursor: var(--cursor);
 }

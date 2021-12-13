@@ -10,27 +10,28 @@ min-width: 768px;
 }    
 /* version_firstmobile**********************************************************************
 ********************************************************************************************/
+
 /*index-html  page acceuil-------------------------------------------------*/
 /*container presentation*/
 
 .container_presentation .localisation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .localisation .icon1{
-     margin-left: 23%;
-    }
-    .localisation_text{
-        width:70%;
-        margin-right:50px ;
-    }
+    margin-left: 23%;
+}
+.localisation_text{
+    width:70%;
+    margin-right:50px ;
+}
 .localisation{
 display: flex;
 justify-content: center;
 align-items: center;
-color: black;
-font-size: 25px;
+color:var(--colorblack);
+font-size:var(--font-size3);
 margin:0 ;
 }
 /*index-html  page acceuil-------------------------------------------------*/
@@ -48,7 +49,7 @@ margin: 0;
 .reservation_menu, .decouvrir{
 margin: 0;
 padding: 25px;
-color: black;
+color: var(--colorblack);
 font-family:"roboto" ;
 }
 /*container_fonctionnement-----------------------------------*/
@@ -65,8 +66,8 @@ background-image:none;
 }
 
 .fonctionnement .titre_h2{
-    margin-left:25px ;
-    }
+margin-left:25px ;
+}
 .container_fonctionnement ol {
 display: flex;
 flex-direction: column;
@@ -88,7 +89,7 @@ background-color:var(-concrete);
 .fonctionnement i{
 display: flex;
 padding: 0;
-color: black;
+color: var(--colorblack);
 font-size:20px ;
 }
 /*compteur fonctionnement ol pages d'aceuil------*/
@@ -109,14 +110,14 @@ color: white;
 width: 25px;
 height:25px;
 border-radius: 50%;
-background-color:#9356dc;
+background-color:var(--violet);
 }
 .fonctionnement li:hover{
-background-color:#e9d9fa ;
-cursor:pointer ;
+background-color:var(--colorli) ;
+cursor: var(--cursor);
 }
 .fonctionnement i:hover{
-color: #9356dc; 
+color: var(--colorprimary); 
 }
 
 /*container_restaurant-----------------------------------------------*/
@@ -130,7 +131,6 @@ height:auto ;
 background-color:var(--lightgrey);
 padding:0 ;
 margin: 0;
-
 }
 .restaurant_menus{
 display: flex;
@@ -176,15 +176,15 @@ margin-top: 0px;
 margin-bottom: 0;
 }
 .carte .choix{
-    padding-left: 10px;
-    margin:0 ;
-    margin-top: 10px;
-    }
+padding-left: 10px;
+margin:0 ;
+margin-top: 10px;
+}
 
 /*-heart acceuil place*/
 .heart{
 position:static;
-color: black ;
+color: var(--colorblack) ;
 font-size: 25px;
 margin-left:85% ;
 margin-top:-18% ;
@@ -196,21 +196,22 @@ transition: color 1s ease-out;
 }
 .fa-heart:hover::before{
 font-weight: bold;
-color: #ff79da;
-cursor: pointer;
+color:var(--colorheart);
+cursor: var(--cursor);
 }
 /*titre nouveau mis dans animation*/
 .nouveau{
 position:relative;
 border-radius: 3px;
-background-color: #99e2d0;
-color: #217460;
+background-color: var(--lightvert);
+color: var(--vertpromo);
 padding: 5px;
 top: 3rem;
 right: 10px;
 margin-left: 68%;
 margin-top:15% ;
 }
+/**************************************************************************************************/
 /*menu des restaurant 4 pageshtml---------------------------------------------------------------*/
 .menu_presentation{
 display: flex;
@@ -257,14 +258,14 @@ font-family:"shrikhand", sans sherif ;
 padding-left:15px ;
 margin-top: 140px;
 font-size: 25px;
-color: black;
+color:var(--colorblack);
 }
 /*heart des 4 pages_mobile*/
 .heart_menu{
 position: relative;
 display: flex;
 align-items: center;
-color: black ;
+color: var(--colorblack);
 font-size: 25px;
 margin-top:30% ;
 margin-left: 30%;
@@ -276,8 +277,8 @@ transition: color 1s ease-out;
 }
 .far-heart:hover::before{
 font-weight: bold;
-color: #ff79da;
-cursor: pointer;
+color: var(--colorheart);
+cursor: var(--cursor);
 }
 .bloc{
 display: flex;
@@ -315,7 +316,7 @@ padding-left: 10px;
 height:50%;
 }
 .ensemble_menu{
-display: flex;
+/*display: flex;*/
 font-weight: 900;
 overflow: hidden;/*element disparait*/
 }
@@ -335,6 +336,13 @@ font-size:15px ;
 font-weight: normal;
 padding: 5px;
 }
+.menu_description, .titre_menu, .titre_p{
+   /*ajout 3 petits points*/
+white-space:nowrap;
+overflow: hidden;
+text-overflow:ellipsis ;  
+flex-grow: 1; 
+} 
 span.prix{
 display: flex;
 align-items: flex-end;
@@ -343,24 +351,27 @@ font-weight: 900;
 padding: 16px;
 }
 .button_cercle_animation{
-align-items: center;
+position:relative;
 background-color: #99e2d0;
-margin-right: -60px;/*meme largeur que la width*/
-width:60px ;
 border-radius:0px 15px 15px 0px ;
 }
-/*modif hover sur la vignette*/
-.menu_description:hover,
-.button_cercle_animation:hover{
-margin-right:0px;
+modif hover sur la vignette
+.ensemble_menu:hover
+{
+margin-right:60px ;
 cursor: pointer;
 overflow:visible;
-transition: margin-right 2s ease-in-out;
+transition: margin-right 400ms;
 }
+.button_cercle_animation:hover{
+    overflow: hidden;
+    margin-right:-60px;
+}
+
 .cercle{
 position:relative;
 color:#ffff ;
-font-size: 25px;
+font-size: 20px;
 justify-content: center;
 align-items: center;
 margin:0 ;
@@ -376,6 +387,6 @@ padding-bottom: 50px;
 
 }
 .input .btn{
-cursor: pointer;
+cursor: var(--cursor);
 }
 }

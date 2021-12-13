@@ -6,13 +6,12 @@ body{
     max-width:1900px ;
     height:auto ;
 }
-
-
+/**************************/
 /*footer page d'acceuil*/
 footer{
 
-    background-color:rgb(53, 51, 51);
-    color:#ffff ;
+    background-color:var(--colorbakgroundfooter);
+    color:var(--colorwhite);
     display: flex;
     width:auto ;
     height:auto ;
@@ -20,11 +19,12 @@ footer{
     margin:0 ;
     top: -4px;
     }
+/*******************/
  /*footer_tablette*/
 .footer_restaurant_tab{
     position:relative;
-    background-color:rgb(53, 51, 51);
-    color:#ffff ;
+    background-color:var(--colorbakgroundfooter);
+    color:var(--colorwhite);
     display: flex;
     flex-direction: column;
     width:auto ;
@@ -38,14 +38,13 @@ font-family:"shrikhand", cursive;
 padding-left: 15px;
 font-size:var(--font-size1) 
 }
+/**********************/
 /* footer des 4 pages*/
-
-
 /*footer_mobile*/
 .footer_restaurant{
     position:relative;
-    background-color:rgb(53, 51, 51);
-    color:#ffff ;
+    background-color:var(--colorbakgroundfooter);
+    color:var(--colorwhite);
     display: flex;
     flex-direction: column;
     width:auto ;
