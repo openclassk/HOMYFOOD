@@ -38,10 +38,11 @@ rgba(0,0,255,0.5));
 :root {
 --boxshadow:5px 10px 10px -3px #95a5a6 ;
 }
-/*objet divers*/
+/*autre objet*/
 :root{
 --cursor:pointer;
 }
+
 /*footer*/
 a ,footer a{
 color: inherit;
@@ -53,20 +54,25 @@ margin: 0;
 padding:0 ;
 padding-left: 15px;
 }
-/*bouton*/
-.btn {
-height:60px ;
-width: 250px;
-align-items: center;
-background-image:linear-gradient(to top,rgba(255, 0, 242, 0.452), 
-rgba(0,0,255,0.5));
-border-radius: 20px 20px 20px 20px;
-box-shadow: 5px 10px 10px -3px #FFA4C3;
-color: white;
-font-size: var(--font-size1);
-border: none;
-cursor: pointer;
+
+/*restaurant*/
+.carte{
+    width:auto ;
+    height:auto ;
 }
+
+/*nouveau_promo first_mobile acceuil*/
+.nouveau{
+    position:relative;
+    border-radius: 3px;
+    background-color: var(--lightvert);
+    color: var(--vertpromo);
+    padding: 5px;
+    top: 3rem;
+    right: 10px;
+    margin-left: 68%;
+    margin-top:15% ;
+    }
 /*hover*/
 .fonctionnement li:hover{
 transform: scale(1.02);

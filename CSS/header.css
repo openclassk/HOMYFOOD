@@ -16,47 +16,8 @@ width: 250px;
 height:45px ;
 margin-bottom:15PX ;
 }
-/*page index html--------------------------*/
-.container_presentation{
-width:auto ;
-height:70px;
-justify-content: center;
-}
-.localisation{
-width: 100%;
-height:100%; 
-background-color:var( --colorbackgroundheader);
 
-}
-.localisation .icon1{
-color: var(--colorblack);
-font-size: 25px;
-margin-right:10px ;
-margin-left:25% ;
-}
-.localisation_text{
-height: 50px;
-background-color:var(--colorbackgroundheader);
-border:transparent;
-font-size:var(--font-size3);
-font-weight: bold;
-
-}
-/*container_reservation*/
-.container_reservation{
-width:auto ;
-text-align: center;
-background-color:var(--lightgrey);
-height:350px;
-}
-.reservation_menu, .decouvrir{
-margin: 0;
-padding: 25px;
-color: var(--colorblack);
-font-family:"roboto" ;
-}
-
-/*icone retour a la page acceuil*/
+/*icon retour a la page acceuil*/
 .retour_page{
 position:absolute;
 top:25px;
