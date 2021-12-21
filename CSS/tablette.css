@@ -1,331 +1,95 @@
 /*moyen ecran (tablette, moins de 992px)*/
-@media screen and (max-width:992px){
+@media screen and (max-width: 1175px) {
+  body {
+    min-width: 992px;
+    max-width: 1175px;
+    background-color: pink
+  }
 
-body{
-margin: 0;
-padding: 0;
-font-family:"roboto", sans sherif ;
-min-width: 769px;
-max-width:992px ;
-}
+@media screen and (max-width: 992px) {
+  body {
+    min-width: 768px;
+    max-width: 992px;
+    background-color: springgreen;
+  }
 
-/*version_tablette****************************************************************
+  /*version_tablette****************************************************************
 *********************************************************************************/
-/*index-html page d'acceuil**********/
-.btn3{
-margin-left: 38%;
-}
-/*container_fonctionnement*/
-.container_fonctionnement {
-width: auto;
-height: auto;
-margin-right: 10%;
-}
-.fonctionnement__titre_h2{
-margin-left:20% ;
-}
-.container_fonctionnement__ol {
-display: flex;
-flex-direction: column;
-justify-content: center;
-width:100%;
-height:100% ;
-padding:0 ;
-margin:0 ;
-}
-.fonctionnement li{
-width:60% ;
-margin-bottom: 25px;
-background-color:var(--concrete);
-}
-.fonctionnement i{
-display: flex;
-padding: 0;
-font-size:var(--font-size4);
-color:var(--colorblack);
-}
-/*
+  /*index-html page d'acceuil**********/
+  /*container_fonctionnement*/
+  .fonctionnement__titre_h2 {
+    margin-left: 20%;
+  }
 /*compteur fonctionnement ol pages d'aceuil------*/
-.fonctionnement ol {
-counter-reset: chiffre;  /*initialise et nomme le compteur*/
-}
-.fonctionnement .compteur{
-list-style-type: none; /* on incremente le comteur a chaque li*/
-counter-increment:chiffre ;
-}
-.fonctionnement .compteur:before{
-display: flex;
-align-items: center;
-justify-content: center;
-content:counter(chiffre); /*affiche compteur*/
-margin-left: -40%;/*distance compteur*/
-color:var(--colorwhite);
-width: 25px;
-height:25px;
-border-radius: 50%;
-background-color:var(--colorprimary);
-}
+  .fonctionnement ol {
+    counter-reset: chiffre; /*initialise et nomme le compteur*/
+  }
+  .fonctionnement .compteur {
+    list-style-type: none; /* on incremente le comteur a chaque li*/
+    counter-increment: chiffre;
+  }
+  .fonctionnement .compteur:before {
+    content: counter(chiffre); /*affiche compteur*/
+  }
 
-.fonctionnement li:hover{
-background-color:var(--colorli);
-cursor:var(--cursor);
-}
-.fonctionnement i:hover{
-color:var(--colorprimary); 
-}
-.fonctionnement i{
-margin-right:15px ;
-}
-
-/*container_restaurant----------------------*/
-.container_restaurant{
-display: flex;
-width:auto;
-height:auto ;
-background-color:var(--lightgrey);
-padding:0 ;
-margin: 0;
-}
-.container_restaurant__restaurant_menus{
-margin-left: 10%;
-}
-.restaurant__titre_h2{
-width: 100%;
-margin: 0;
-margin-top: 25px;
-margin-bottom: 30px;
-margin-left:40px ;
-font-weight: bold;
-}
-/*carte 1-3-4 */
-.carte a figure{
-    background-color:var(--colorwhite) ;
+  /*container_restaurant----------------------*/
+  .restaurant__titre_h2{
+    margin-left: 20%;
+  }
+  
+  /*carte 1-3-4 */
+  .carte a figure {
+    background-color: var(--colorwhite);
     height: 60%;
-    width:550px;
+    width: 550px;
     border-radius: 15px 15px 15px 15px;
-    box-shadow:var(--boxshadow) ;
+    box-shadow: var(--boxshadow);
     margin-bottom: 50px;
-    
-    }.carte  a img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-    object-position: center bottom;
-    }
-    .carte a figcaption{
-    padding-top:10px ;
-    height:80px;
-    }
-    .carte__titre_h3
-    {
-    padding: 10px 0 0 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-    }
-    .carte__choix{
-    padding-left: 10px;
-    margin:0 ;
-    margin-top: 10px;
-    }
-/*heart******/
-.heart {
-position:relative;
-font-size:25px ;
-left:85%;
-margin-top:-10%;
-color: var(--colorblack);
-}
-.fa-heart::before {
-content: "\f004"; /* code de l icone*/
-font-weight: 400;
-transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-font-weight:var(--font-weight);
-color: var(--colorheart);
-cursor: var(--cursor);
-}
-/*-------------------------------------------------------------------*/
-/* menu restaurant des 4 pages---------------------------------------*/
-.menu_presentation{
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: auto;
-height:auto;
-}
-.presentation_img{
-display: flex;
-flex-direction: column;
-width: auto;
-height:auto;
-object-fit: cover;
-}
-.presentation_img .img1{
-display:flex ;
-flex-direction: column;
-width:100% ;
-height: 300px;
-object-fit: cover;
-}
-.présentation_menu_global{
-display: flex;
-flex-direction:column;
-justify-content: center;
-align-items: center;
-position: relative;
-width:auto;
-height:auto;
-background-color:var(--lightgrey);
-z-index:2;
-top:-30px;
-border-radius:25px  25px 0 0;
-}
-.presentation_menu{
-display:flex;
-width:100% ;
-height: 60px;
-align-items: center;
-margin-right:10px ;
-margin-left:10px ;
-}
-.titre_m{
-margin-top:40px ;
-padding-left: 50px;
-font-size: 30px;
-font-family:"shrikhand", sans sherif ;
-
-}
-/*heart des 4 pages_tablette_css*/
-.heart_menu{
-position: relative;
-display: flex;
-align-items: center;
-color: var(--colorblack);
-font-size: 25px;
-top:10% ;
-margin-left:50%;
-}
-.far-heart::before {
-content: "\f004"; /* code de l icone*/
-font-weight:400;
-transition: color 1s ease-out;
-}
-.far-heart:hover::before{
-font-weight:bold;
-color:var(--colorheart);
-cursor: var(--cursor);
-}
-.bloc{
-width: 70%;
-height: auto;
-margin-bottom: 25px;
-margin-left:15px ;
-margin-right:15px ;
-}
-
-/*titre entree trait vert*/
-.titre_entree_plat_dessert{
-width:45px ;
-font-size:25px ;
-border-bottom: 3px solid var(--lightvert);
-line-height:50px ;
-margin: 15px ;
-margin-left:30px ;
-margin-bottom: 30px;
-}  
-.bloc_btn{
-align-items: center;
-margin-left:50px ;
-display: flex;
-flex-direction: column;
-}
-.button,
- .button_plat, 
- .button_dessert{
-width: 100%;
-background-color:var(--colorwhite);
-border-radius:15px 15px 15px 15px ;
-margin-top: 20px;
-height:auto ;
-}
-.ensemble_menu{
-display: flex;
-font-weight: 900;
-overflow: hidden;/*element disparait*/
-}
-.menu_description{
-display: flex;
-flex-direction: column;
-padding: 16px;
-}
-/*titre_menu*/
-.titre_menu
-{
-font-size: 20px;
-padding:0;
-}
-.titre_p{
-font-size:15px ;
-font-weight: normal;
-padding: 5px;
-}
-.prix{
-display: flex;
-align-items: flex-end;
-margin-left: auto;
-font-weight: 900;
-padding: 16px;
-}
-
-.button_cercle_animation{
-position: relative;
-background-color:var(--lightvert);
-margin-right: -60px;
-width:60px ;
-border-radius:0 15px 15px 0 ;
-}
-
-/*modif hover sur la vignette*/
-.ensemble_menu:hover
-{
-margin-right:60px;
-cursor:var(--cursor);
-overflow:visible;
-transition: margin-right 400ms;
-}
-.button_cercle_animation:hover{
-overflow: hidden;
-margin-right:-60px;
-}
-.cercle .fa-check-circle{
-display: flex;
-color:var(--colorwhite);
-font-size: 25px;
-justify-content: center;
-align-items: center;
-margin:0 ;
-padding: 0;
-margin-top:30px;
-transition-delay: 2s;
-}
-.btn_bas{
-    margin-left:15% ;
+  }
+  .carte a figcaption {
+    padding-top: 10px;
+    height: 80px;
+  }
  
+  /*heart acceuil******/
+  .heart {
+    position: relative;
+    font-size: 25px;
+    left: 85%;
+    margin-top: -10%;
+    color: var(--colorblack);
+  }
+ 
+  /*-------------------------------------------------------------------*/
+  /* menu restaurant des 4 pages---------------------------------------*/
+ 
+  .présentation_menu_global {
+    display: flex;
+     position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgrey);
+    z-index: 2;
+    top: -30px;
+    border-radius: 25px 25px 0 0;
+    height: auto;
+  }
+  .bloc{
+    width: 90%;
+  }
+  .button,
+  .button_plat,
+  .button_dessert {
+    width: 100%;
+    background-color: var(--colorwhite);
+  }
+  .btn_bas {
+    margin-left: 15%;
+  }
+
 }
 
-/*footer_tablette*/
-.footer_restaurant{
-position:relative;
-background-color:var(--colorbakgroundfooter);
-color:var(--colorwhite);
-display: flex;
-flex-direction: column;
-width:auto ;
-height:100%;
-margin:0 ;
-top:-70px;
-}
+
 
 }

@@ -4,7 +4,7 @@
 --lightviolet:#FF9DA;
 --lightvert:#99e2d0;
 --vertpromo:#217460;
---lightgrey:#e7e4e4;
+--lightgrey:rgb(240, 240, 240);
 --colorclouds:#ecf0f1;
 --concrete:#f3f1f1;
 --colorfonctionnementli:#f6f6f6;
@@ -19,7 +19,7 @@
 /*background-color*/
 :root{
 --colorbakgroundfooter:rgb(53, 51, 51);
---colorbackgroundheader:rgb(238, 233, 233);
+--colorbackgroundheader:#a3a3a354;
 --backgroundlihover:#e9d9fa;
 }
 /*couleur gradient*/
@@ -43,7 +43,7 @@ rgba(0,0,255,0.5));
 :root{
 --cursor:pointer;
 }
-.btn, .btn2, .btn3{
+.btn{
 height:45px ;
 width: 250px;
 align-items: center;
@@ -68,13 +68,6 @@ list-style-type:none ;
 margin: 0;
 padding:0 ;
 padding-left: 15px;
-}
-
-/*restaurant*/
-.carte{
-    width:auto;
-    height:auto ;
-    margin-right:25px ;
 }
 
 /*nouveau_promo first_mobile acceuil*/

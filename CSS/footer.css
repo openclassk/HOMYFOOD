@@ -9,29 +9,16 @@ height:auto ;
 /**************************/
 /*footer page d'acceuil*/
 footer{
-
 background-color:var(--colorbakgroundfooter);
 color:var(--colorwhite);
 display: flex;
-width:auto ;
-height:auto ;
 flex-direction: column;
+width:auto;
+height:auto ;
 margin:0 ;
 top: -4px;
 }
-/*******************/
-/*footer_tablette*/
-.footer_restaurant_tab{
-position:relative;
-background-color:var(--colorbakgroundfooter);
-color:var(--colorwhite);
-display: flex;
-flex-direction: column;
-width:auto ;
-height:auto;
-margin:0 ;
-top:-70px;
-}
+
 
 footer h1, .footer_restaurant h1{
 font-family:"shrikhand", cursive;
@@ -40,7 +27,7 @@ font-size:var(--font-size1)
 }
 /**********************/
 /* footer des 4 pages*/
-/*footer_mobile*/
+
 .footer_restaurant{
 position:relative;
 background-color:var(--colorbakgroundfooter);

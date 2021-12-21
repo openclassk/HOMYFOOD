@@ -1,402 +1,147 @@
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 350px;
+    max-width: 768px;
+ 
+  }
+  .header {
+    max-width: 100%;
+  }
 
-@media screen and (max-width:600px) { 
-    .body{
-        min-width: 350px;
-        max-width: 599px;
-        margin:0;
-    }
-    .header{
-        max-width:100%;
-        } 
-
-}
-
-@media screen and (max-width: 767.98px) { 
-
-body{
-margin: 0;
-padding: 0;
-min-width: 600px;
-max-width: 768px;
-}  
-.header{
-max-width:100%;
-}  
-/* version_firstmobile**********************************************************************
+  /* version_firstmobile**********************************************************************
 ********************************************************************************************/
-
-/*index-html  page acceuil-------------------------------------------------*/
-/*container presentation*/
-.container_presentation{
-display: flex;
-justify-content: center;
-align-items: center;
-width:100% ;
-height:100% ;
-background-color:var( --colorbackgroundheader)
-}
-.container_presentation__localisation{
-color:var(--colorblack);
-font-size:var(--font-size3);
-height:60px ;
-margin-top:25px
-}
-.localisation__icon{
-margin-right: 10px;
-}
-.localisation_text{
-font-family: "roboto";
-font-size: 25px;
-}
-
-/*index-html  page acceuil-------------------------------------------------*/
-/*presentation*/
-
-/*container_reservation*/
-.container_reservation{
-display: flex;
-flex-direction: column;
-width:100%;
-background-image: none;
-height:auto;
-margin: 0;
-}
-.container_reservation_menu{
-background-color:var(--lightgrey);
-height: 100%; 
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-.reservation_menu__decouvrir{
-text-align: center;
-margin: 0;
-padding: 15px;
-color: var(--colorblack);
-font-family:"roboto" ;
-font-weight:var(--font-weight) ;
-}
-.btn {
-margin-left: 20%;
-}
-/*container_fonctionnement-----------------------------------*/
-.container_fonctionnement {
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding:0 ;
-margin:0 ;  
-margin-bottom:25px ;
-width: auto;
-height: auto;
-background-image:none;
-}
-
-.fonctionnement__titre_h2{
-margin-right:19% ;
-}
-.container_fonctionnement__ol {
-display: flex;
-flex-direction: column;
-justify-content: center;
-width:100%;
-height:100% ;
-padding:0 ;
-margin:0 ;
-}
-.fonctionnement li{
-display: flex;
-justify-content: space-around;
-align-items: center;
-width:100%;
-margin-bottom: 25px;
-margin-left: 25px;
-background-color:var(--concrete);
-}
-.fonctionnement i{
-display: flex;
-padding: 0;
-margin:0 ;
-margin-right: 10px;
-color: var(--colorblack);
-font-size:20px ;
-}
-/*compteur fonctionnement ol pages d'aceuil------*/
-.fonctionnement ol {
-counter-reset: section;  /*initialise et nomme le compteur*/
-}
-.fonctionnement .compteur{
-list-style-type: none; /* on incremente le comteur a chaque li*/
-counter-increment:section ;
-}
-.fonctionnement .compteur:before{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-left: -8%; /*(distance compteur cercle violet)*/
-content: counter(section); /*affiche compteur*/
-color: white;
-width: 25px;
-height:25px;
-border-radius: 50%;
-background-color:var(--violet);
-}
-.fonctionnement li:hover{
-background-color:var(--colorli) ;
-cursor:var(--cursor);
-}
-.fonctionnement i:hover{
-color: var(--colorprimary); 
-}
-li, .p_fonctionnement{
-    padding-right:15px ;
+ 
+/*index-html  page acceuil-*/
   
-}
-/*container_restaurant-----------------------------------------------*/
-.container_restaurant{
-display: flex;
-flex-direction: column; 
-justify-content: space-between;
-justify-content: center;
-align-items: center;
-width:auto;
-height:auto ;
-padding:0 ;
-margin: 0;
-}
-.container_restaurant__restaurant_menus{
-background-color:var(--lightgrey);
-margin-left: 0;
-}
+/*container_reservation*/
+  /*container_fonctionnement--*/
+
+  .fonctionnement__titre_h2 {
+    margin-left: 5%;
+  }
+ .fonctionnement li{
+   width: 80%;
+ }
+  /*compteur fonctionnement ol pages d'aceuil------*/
+  .fonctionnement ol {
+    counter-reset: section; 
+  }
+  .fonctionnement .compteur {
+    list-style-type: none; 
+    counter-increment: section;
+  }
+  .fonctionnement .compteur:before {
+
+    content: counter(section); /*affiche compteur*/
+  }
+  /*container_restaurant-----------------------------------------------*/
 .restaurant__titre_h2{
-width:100% ;
-margin-top: 20px;
-margin-bottom: 10px;
-margin-left:-27%;
-font-weight:var(--font-weight);
+  margin-left: 9%;
 }
-/*carte1 2 3 4 */
+  /*carte1 2 3 4 */
+  .carte a figure {
+    background-color: var(--colorwhite);
+    height: 60%;
+    width: 350px;
+    margin-bottom: 50px;
+  }
+  
+  .carte a figcaption {
+    padding-top: 10px;
+    height: 80px;
+  }
 
-.carte a figure{
-background-color:var(--colorwhite) ;
-height: 60%;
-width:350px;
-border-radius: 15px 15px 15px 15px;
-box-shadow:var(--boxshadow) ;
-margin-bottom: 50px;
+  /*-heart acceuil place*/
+  .heart {
+    position: static;
+    color: var(--colorblack);
+    font-size:var(--font-size3);
+    margin-left: 85%;
+    margin-top: -15%;
+  }
+  
 
-}.carte  a img{
-width: 100%;
-height: 200px;
-object-fit: cover;
-border-radius: 15px 15px 0 0;
-object-position: center bottom;
-}
-.carte a figcaption{
-padding-top:10px ;
-height:80px;
-}
-.carte__titre_h3
-{
-padding: 10px 0 0 10px;
-margin-top: 0;
-margin-bottom: 0;
-}
-.carte__choix{
-padding-left: 10px;
-margin:0 ;
-margin-top: 10px;
-}
+  /**************************************************************************************************/
+  /*menu des restaurant 4 pageshtml---------------------------------------------------------------*/
+  .menu_presentation {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+  }
+  .présentation_menu_global {
+    position: relative;
+    z-index: 2;
+    top: 210px;
+    border-radius: 30px 30px 0 0;
+  }
+  .presentation_img {
+    position: relative;
+    display: flex;
+  }
+  .presentation_img .img1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+  .presentation_menu {
+    display: flex;
+    margin-top: -60px; /* hauteur */
+  }
+  .titre_m {
+    padding-left: 15px;
+    margin-top: 140px;
+  }
+  /*heart des 4 pages_mobile*/
+  .heart_menu{
+    margin-top:28% ;
+    margin-left: 20%;
+    }
+    
+  .bloc {
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /*titre entree trait vert*/
+  .titre_entree_plat_dessert {
+    margin-top: 55px;
+    top: 20px;
+  }
 
-/*-heart acceuil place*/
-.heart{
-position:static;
-color: var(--colorblack) ;
-font-size: 25px;
-margin-left:85% ;
-margin-top:-18% ;
-}
-.fa-heart::before {
-content: "\f004"; /* code de l icone*/
-font-weight: 400;
-transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-font-weight: bold;
-color:var(--colorheart);
-cursor:var(--cursor);
-}
-
-/**************************************************************************************************/
-/*menu des restaurant 4 pageshtml---------------------------------------------------------------*/
-.menu_presentation{
-display: flex;
-position:absolute;  
-margin-top: 0; 
-z-index: 1;
-width:auto;
-height:auto;
-}
-.presentation_img{
-position: relative;
-display: flex;
-flex-direction: column;
-width: auto;
-height:auto;
-}
-.presentation_img .img1{
-position: relative; 
-display: block;
-display:flex ;
-top:1px;
-flex-direction: column;
-width:100%;
-height:100% ;
-object-fit: cover;
-object-position:center;
-z-index: 1;
-}
-.présentation_menu_global{
-position:relative;
-z-index: 2;
-top:210px;
-border-radius:30px  30px 0 0 ;
-}
-.presentation_menu{
-display: flex;
-margin-top:-60px; /* hauteur */
-align-items: center;
-margin-right:10px ;
-margin-left:10px ;
-}
-.titre_m{
-font-family:"shrikhand", sans sherif ;
-padding-left:15px ;
-margin-top: 140px;
-font-size: var(--font-size3);
-color:var(--colorblack);
-}
-/*heart des 4 pages_mobile*/
-.heart_menu{
-position: relative;
-display: flex;
-align-items: center;
-color: var(--colorblack);
-font-size:var(--font-size3);
-margin-top:30% ;
-margin-left: 30%;
-}
-.far-heart::before {
-content: "\f004"; /* code de l icone*/
-font-weight: 400;
-transition: color 1s ease-out;
-}
-.far-heart:hover::before{
-font-weight:var(--font-weight);
-color: var(--colorheart);
-cursor:var(--cursor);
-}
-.bloc{
-display: flex;
-flex-direction: column;
-width: 90%;
-margin-left:15px ;
-margin-right:15px ;
-}
-/*titre entree trait vert*/
-.titre_entree_plat_dessert{
-width:45px ;
-border-bottom: 3px solid var(--lightvert);
-line-height:50px ;
-margin: 15px ;
-margin-top:55px;
-top:20px ;
-}
-.bloc_btn{
-display: flex;
-flex-direction: column;
-width: auto;
-height:auto ;
-margin-left:10px ;
-}
-.button,
- .button_plat,
-  .button_dessert{
-display: flex;
-flex-direction: column;
-background-color:var(--colorwhitesmoke);
-border-radius:15px 15px 15px 15px ;
-box-shadow:5px 3px 3px  rgb(163, 159, 159);
-margin-top: 20px;
-padding-left: 10px;
-height:50%;
-}
-.ensemble_menu{
-/*display: flex;*/
-font-weight: 900;
-overflow: hidden;/*element disparait*/
-}
-.menu_description{
-display: flex;
-flex-direction: column;
-padding: 16px;
-}
-/*titre_menu*/
-.titre_menu{
-width:auto;
-font-size:20px;/* varaible*/
-padding: 0;
-}
-.titre_p{
-font-size:15px ;
-font-weight: normal;
-padding: 5px;
-}
-.menu_description,
- .titre_menu, 
- .titre_p{
-/*ajout 3 petits points*/
-white-space:nowrap;
-overflow: hidden;
-text-overflow:ellipsis ;  
-flex-grow: 1; 
-} 
-.prix{
-display: flex;
-align-items: flex-end;
-margin-left: auto;
-font-weight: 900;
-padding: 16px;
-}
-.button_cercle_animation{
-position:relative;
-background-color: var(--lightvert);
-border-radius:0 15px 15px 0 ;
-}
-/*modif hover sur la vignette*/
-.ensemble_menu:hover
-{
-margin-right:60px ;
-cursor:var(--cursor);
-overflow:visible;
-transition: margin-right 400ms;
-}
-.button_cercle_animation:hover{
-overflow: hidden;
-margin-right:-60px;
-}
-.cercle .fa-check-circle{
-display: flex;
-color:var(--colorwhite) ;
-height: auto;
-font-size:var(--font-size3);
-justify-content: center;
-align-items: center;
-margin:0 ;
-padding: 0;
-margin-top:30px;
-transition-delay: 2s;
-}
+  .bloc_btn {
+    margin-left: 10px;
+  }
+  .button,
+  .button_plat,
+  .button_dessert {
+    background-color:var(--colorwhite);
+    padding-left: 10px;
+  }
 }
 
 
+@media screen and (max-width: 350px) {
+  body {
+    min-width: 350px;
+    max-width: 480px;
+   background-color: blanchedalmond; 
+  
+  }
+ .container_fonctionnement{
+   padding-left: 25px;
+ }
+ .restaurant__titre_h2{
+   margin-left: 10%;
+ }
+ .carte{
+   width:auto ;
+   height:auto ;
+ }
+ .carte a figure{
+  height: 290px;
+  width: 300px;
+ }
+  }

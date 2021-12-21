@@ -137,9 +137,8 @@ opacity:1 ;}
 }
 /*animation  rotatation check-circle*/
 .fa-check-circle{
-transform-origin:center;
-transform: rotate(360deg);
-animation: cercle 1s ease-out infinite;
+/*transform: rotate(360deg);*/
+animation: cercle 2s  1s infinite;
 }
 @keyframes cercle{
 0%{transform: rotate(0deg);}
