@@ -3,14 +3,14 @@
   body {
     min-width: 992px;
     max-width: 1175px;
-    background-color: pink
+  
   }
 
 @media screen and (max-width: 992px) {
   body {
     min-width: 768px;
     max-width: 992px;
-    background-color: springgreen;
+  
   }
 
   /*version_tablette****************************************************************

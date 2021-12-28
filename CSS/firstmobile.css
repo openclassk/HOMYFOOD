@@ -96,8 +96,10 @@
   }
   /*heart des 4 pages_mobile*/
   .heart_menu{
+    position: relative;
     margin-top:28% ;
     margin-left: 20%;
+    float: right;
     }
     
   .bloc {
@@ -127,7 +129,6 @@
   body {
     min-width: 350px;
     max-width: 480px;
-   background-color: blanchedalmond; 
   
   }
  .container_fonctionnement{
