@@ -153,10 +153,11 @@ background-color: var(--lightgrey);
 
 /*carte 1-2-3-4 */
 /*restaurant*/
-.carte{
+ .carte{
+ justify-content: center;
+   height: auto;
   width:auto;
-  height:auto ;
-}
+ }
 
 .carte a figure {
   background-color: var(--colorwhite);
@@ -238,16 +239,13 @@ background-color:var(--lightgrey) ;
 }
 .presentation_menu {
   display: flex;
-  width: 100%;
-  height: 60px;
-  align-items: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  justify-content: space-between;
+  width: 80%;
+  margin-left:15px ;
 }
 .titre_m {
-  margin-top: 40px;
-  padding-left: 50px;
-  font-size: 30px;
+  margin-left: 50px;
+  font-size: 28px;
   font-family: "shrikhand", sans sherif;
   color: var(--colorblack);
 }
@@ -258,8 +256,7 @@ background-color:var(--lightgrey) ;
   align-items: center;
   color: var(--colorblack);
   font-size: 25px;
-  top: 10%;
-  margin-left: 50%;
+  padding-right: 100px;
 }
 .far-heart::before {
   content: "\f004"; /* code de l icone*/
@@ -278,26 +275,21 @@ background-color:var(--lightgrey) ;
   height: auto;
   margin-bottom: 25px;
   margin-left: 15px;
-  margin-right: 15px;
 }
 
 /*titre entree trait vert*/
 .titre_entree_plat_dessert {
   width: 45px;
-  font-size: 25px;
+  font-size: 20px;
   border-bottom: 3px solid var(--lightvert);
   line-height: 50px;
-  margin: 15px;
-  margin-left: 50px;
-  margin-bottom: 30px;
+  margin: 15px 15px 20px 50px;
 }
 .bloc_btn {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
-  display: flex;
-  margin-left: 15%;
+  margin-left: 15px;
 }
 .button,
 .button_plat,
@@ -343,10 +335,9 @@ background-color:var(--lightgrey) ;
 }
 .prix {
   display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+  align-items:flex-end;
   font-weight: 900;
-  padding: 16px;
+  padding:16px ;
 }
 .button_cercle_animation {
   position: relative;

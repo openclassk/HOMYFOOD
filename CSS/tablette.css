@@ -1,10 +1,4 @@
 /*moyen ecran (tablette, moins de 992px)*/
-@media screen and (max-width: 1175px) {
-  body {
-    min-width: 992px;
-    max-width: 1175px;
-  
-  }
 
 @media screen and (max-width: 992px) {
   body {
@@ -75,7 +69,22 @@
     border-radius: 25px 25px 0 0;
     height: auto;
   }
-  .bloc{
+
+  .presentation_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left:15px ;
+  }
+  .heart_menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--colorblack);
+    font-size: 25px;
+    padding-right: 30px;
+  }
+    .bloc{
     width: 90%;
   }
   .button,
@@ -91,5 +100,3 @@
 }
 
 
-
-}

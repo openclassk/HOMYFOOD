@@ -2,7 +2,6 @@
   body {
     min-width: 350px;
     max-width: 768px;
- 
   }
   .header {
     max-width: 100%;
@@ -10,34 +9,33 @@
 
   /* version_firstmobile**********************************************************************
 ********************************************************************************************/
- 
-/*index-html  page acceuil-*/
-  
-/*container_reservation*/
+
+  /*index-html  page acceuil-*/
+
+  /*container_reservation*/
   /*container_fonctionnement--*/
 
   .fonctionnement__titre_h2 {
     margin-left: 5%;
   }
- .fonctionnement li{
-   width: 80%;
- }
+  .fonctionnement li {
+    width: 80%;
+  }
   /*compteur fonctionnement ol pages d'aceuil------*/
   .fonctionnement ol {
-    counter-reset: section; 
+    counter-reset: section;
   }
   .fonctionnement .compteur {
-    list-style-type: none; 
+    list-style-type: none;
     counter-increment: section;
   }
   .fonctionnement .compteur:before {
-
     content: counter(section); /*affiche compteur*/
   }
   /*container_restaurant-----------------------------------------------*/
-.restaurant__titre_h2{
-  margin-left: 9%;
-}
+  .restaurant__titre_h2 {
+    margin-left: 9%;
+  }
   /*carte1 2 3 4 */
   .carte a figure {
     background-color: var(--colorwhite);
@@ -45,7 +43,7 @@
     width: 350px;
     margin-bottom: 50px;
   }
-  
+
   .carte a figcaption {
     padding-top: 10px;
     height: 80px;
@@ -55,11 +53,10 @@
   .heart {
     position: static;
     color: var(--colorblack);
-    font-size:var(--font-size3);
+    font-size: var(--font-size3);
     margin-left: 85%;
     margin-top: -15%;
   }
-  
 
   /**************************************************************************************************/
   /*menu des restaurant 4 pageshtml---------------------------------------------------------------*/
@@ -68,7 +65,7 @@
     position: absolute;
     z-index: 1;
   }
-  .présentation_menu_global {
+  .présentation_menu_global{
     position: relative;
     z-index: 2;
     top: 210px;
@@ -80,69 +77,167 @@
   }
   .presentation_img .img1 {
     position: relative;
+    display: block;
+    display: flex;
+    top: 1px;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     z-index: 1;
   }
+
   .presentation_menu {
     display: flex;
-    margin-top: -60px; /* hauteur */
-  }
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px 15px ;
+    }
   .titre_m {
-    padding-left: 15px;
-    margin-top: 140px;
+    display: flex;
+    padding-left: 5px;
+    font-size: 23px;
+    margin-left: 0;
   }
   /*heart des 4 pages_mobile*/
-  .heart_menu{
+  .heart_menu {
     position: relative;
-    margin-top:28% ;
-    margin-left: 20%;
-    float: right;
-    }
-    
+    padding-right: 16px;
+  }
+
   .bloc {
     width: 90%;
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .titre_p{
+    padding:0 ;
+  }
+  .button_cercle_animation {
+  position: relative;
+  background-color: var(--lightvert);
+  margin-right: -60px;
+  width: 60px;
+  border-radius: 0 15px 15px 0;
+  
+  }
   /*titre entree trait vert*/
-  .titre_entree_plat_dessert {
-    margin-top: 55px;
-    top: 20px;
+ .titre_entree_plat_dessert{
+   margin-left: 0;
+   padding-left: 5px;
+ }
+ .bloc_btn{
+   margin-left: 0;
+ }
+  .menu_description
+ 
+  {
+    /*ajout 3 petits points*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    width:65%;
   }
 
-  .bloc_btn {
-    margin-left: 10px;
-  }
   .button,
   .button_plat,
   .button_dessert {
-    background-color:var(--colorwhite);
-    padding-left: 10px;
+    background-color: var(--colorwhite);
+    padding-left: 0;
   }
 }
 
 
+/**************************************************************************************/
+
 @media screen and (max-width: 350px) {
-  body {
-    min-width: 350px;
-    max-width: 480px;
-  
-  }
- .container_fonctionnement{
-   padding-left: 25px;
- }
- .restaurant__titre_h2{
-   margin-left: 10%;
- }
- .carte{
-   width:auto ;
-   height:auto ;
- }
- .carte a figure{
+/* action enlever dans body min et max widht*/
+body {
+  max-width: 250px;
+  min-width: none;
+}
+.bloc{
+  width:90%;
+ 
+}
+/*restaurant acceuil*/
+.container_fonctionnement {
+  padding-left: 25px;
+}
+.restaurant__titre_h2 {
+  margin-left: 10%;
+}
+/* correction*/
+.carte a figure {
+  margin: 0;
+  margin-bottom: 20px;
   height: 290px;
-  width: 300px;
- }
+  width: 270px;
+}
+.heart {
+  position: static;
+  color: var(--colorblack);
+  font-size: var(--font-size3);
+  margin-left: 85%;
+}
+/*les 4 pages restaurants*/
+.titre_menu{
+  margin: 0;
+}
+.titre_m {
+  display: flex;
+  padding-left:10px ;
+  font-size: 23px;
+}
+
+.titre_entree_plat_dessert {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: 300;
   }
+.heart_menu {
+  position: relative;
+  /*margin-left: 10%;*/
+}
+.presentation_img .img1 {
+  position: relative;
+  display: block;
+  display: flex;
+  top: 1px;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  min-width: 250px;
+}
+ .prix {
+  display: flex;
+  justify-content: stretch;
+  font-weight: 900;
+}
+.ensemble_menu{
+  margin-left: -15px;
+}
+.button_cercle_animation{
+position: relative;
+background-color: var(--lightvert);
+margin-right: -60px;
+width: 60px;
+border-radius: 0 15px 15px 0;
+}
+.presentation_menu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px ;
+}
+.menu_presentation{
+   right:0 ;
+ left:0 ;
+}
+}
