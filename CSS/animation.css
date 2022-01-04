@@ -130,7 +130,7 @@ animation-delay:10s;
 animation-fill-mode:both ;
 }
 @keyframes slide{
-0%{transform: translateY(25px);/*y animation verticale*/
+0%{transform: translateY(30px);/*y animation verticale*/
 opacity:0% ;}
 100%{transform: translateY(0px);
 opacity:1 ;} 
