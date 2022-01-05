@@ -41,12 +41,12 @@ body {
   width: auto;
   height: auto;
   margin: 0;
-    color: var(--colorblack);
-background-color: var(--lightgrey);
+  color: var(--colorblack);
+  background-color: var(--lightgrey);
   text-align: center;
 }
 .reservation_menu__decouvrir {
-  padding: 15px ;
+  padding: 15px;
   margin: 0;
   font-family: "roboto";
   font-weight: var(--font-weight);
@@ -70,7 +70,7 @@ background-color: var(--lightgrey);
   justify-content: center;
   align-items: center;
   /*padding-bottom: 30px;*/
-  padding : 0 0 30px 0;
+  padding: 0 0 30px 0;
   width: auto;
   height: auto;
 }
@@ -82,7 +82,7 @@ background-color: var(--lightgrey);
   border-radius: 15px;
   height: 60px;
   min-width: 65%;
-  max-width:600px;
+  max-width: 600px;
   margin-right: 30px;
   margin-bottom: 30px;
   box-shadow: var(--boxshadow);
@@ -126,7 +126,7 @@ background-color: var(--lightgrey);
   margin-right: 15px;
 }
 /*container_restaurant----------------------*/
-.container_restaurant{
+.container_restaurant {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,11 +135,11 @@ background-color: var(--lightgrey);
   height: auto;
   padding: 0;
 }
- .restaurant__titre_h2{
-   width:100% ;
+.restaurant__titre_h2 {
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight:var(--font-weight);
+  font-weight: var(--font-weight);
   margin-left: 2%;
 }
 .container_restaurant__restaurant_menus {
@@ -148,16 +148,19 @@ background-color: var(--lightgrey);
   justify-content: center;
   align-items: center;
   background-color: var(--lightgrey);
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 /*carte 1-2-3-4 */
 /*restaurant*/
- .carte{
- justify-content: center;
-   height: auto;
-  width:auto;
- }
+.carte {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  height: auto;
+  width: auto;
+}
 
 .carte a figure {
   background-color: var(--colorwhite);
@@ -166,7 +169,13 @@ background-color: var(--lightgrey);
   width: 300px;
   border-radius: 15px 15px 15px 15px;
   box-shadow: var(--boxshadow);
+
 }
+.nouveau{
+  top:45px;
+  left:20%;
+}
+
 .carte a img {
   width: 100%;
   height: 200px;
@@ -176,6 +185,7 @@ background-color: var(--lightgrey);
 }
 .carte a figcaption {
   height: 70px;
+  align-items: stretch;
 }
 .carte__titre_h3 {
   padding: 10px 0 0 10px;
@@ -187,14 +197,10 @@ background-color: var(--lightgrey);
   margin: 0;
   margin-top: 10px;
 }
-/*heart******/
-.heart {
-  position: relative;
-  font-size:var(--font-size3);
-  left: 85%;
-  margin-top: -18%;
-  color: var(--colorblack);
+.figure{
+  margin: 0;
 }
+
 .fa-heart::before {
   content: "\f004"; /* code de l icone*/
   font-weight: 400;
@@ -214,12 +220,12 @@ background-color: var(--lightgrey);
   width: auto;
   height: auto;
 }
-.presentation_menu_global{
-width:auto;
-height:auto ;
-margin-top:0px;
-border-radius:25px  25px 0px 0px ;
-background-color:var(--lightgrey) ;
+.presentation_menu_global {
+  width: auto;
+  height: auto;
+  margin-top: 0px;
+  border-radius: 25px 25px 0px 0px;
+  background-color: var(--lightgrey);
 }
 .presentation_img {
   display: flex;
@@ -241,7 +247,7 @@ background-color:var(--lightgrey) ;
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-left:15px ;
+  margin-left: 15px;
 }
 .titre_m {
   margin-left: 50px;
@@ -305,14 +311,14 @@ background-color:var(--lightgrey) ;
   height: auto;
 }
 .menu_description,
-  .titre_menu,
-  .titre_p {
-    /*ajout 3 petits points*/
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-  }
+.titre_menu,
+.titre_p {
+  /*ajout 3 petits points*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
 .ensemble_menu {
   display: flex;
   font-weight: 900;
@@ -335,9 +341,9 @@ background-color:var(--lightgrey) ;
 }
 .prix {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   font-weight: 900;
-  padding:16px ;
+  padding: 16px;
 }
 .button_cercle_animation {
   position: relative;
@@ -348,12 +354,16 @@ background-color:var(--lightgrey) ;
 }
 
 /* hover sur la vignette*/
-.ensemble_menu:hover {
+.ensemble_menu::before :hover{
   margin-right: 60px;
   cursor: var(--cursor);
   overflow: visible;
-  transition: margin-right 600ms;
-  }
+  transition: margin-right 1000ms;
+}
+.ensemble_menu:hover{
+  margin-right: 0;
+  transition: margin-right 1000ms;
+}
 
 .button_cercle_animation {
   overflow: hidden;
@@ -366,7 +376,7 @@ background-color:var(--lightgrey) ;
 .cercle .fa-check-circle {
   display: flex;
   color: var(--colorwhite);
-  font-size:var(--font-size3);
+  font-size: var(--font-size3);
   justify-content: center;
   align-items: center;
 }

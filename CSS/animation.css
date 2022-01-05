@@ -139,4 +139,5 @@ opacity:1 ;}
 .ensemble_menu:hover .rotate_cercle{
     transition: .5s;
     transform: rotate(360deg);
+  
 }

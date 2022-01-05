@@ -4,7 +4,6 @@
   body {
     min-width: 768px;
     max-width: 992px;
-  
   }
 
   /*version_tablette****************************************************************
@@ -14,7 +13,7 @@
   .fonctionnement__titre_h2 {
     margin-left: 20%;
   }
-/*compteur fonctionnement ol pages d'aceuil------*/
+  /*compteur fonctionnement ol pages d'aceuil------*/
   .fonctionnement ol {
     counter-reset: chiffre; /*initialise et nomme le compteur*/
   }
@@ -27,10 +26,10 @@
   }
 
   /*container_restaurant----------------------*/
-  .restaurant__titre_h2{
+  .restaurant__titre_h2 {
     margin-left: 20%;
   }
-  
+
   /*carte 1-3-4 */
   .carte a figure {
     background-color: var(--colorwhite);
@@ -44,22 +43,17 @@
     padding-top: 10px;
     height: 80px;
   }
- 
-  /*heart acceuil******/
-  .heart {
-    position: relative;
-    font-size: 25px;
-    left: 85%;
-    margin-top: -10%;
-    color: var(--colorblack);
+  .nouveau{
+    top:45px;
+    left:35%
   }
  
   /*-------------------------------------------------------------------*/
   /* menu restaurant des 4 pages---------------------------------------*/
- 
+
   .présentation_menu_global {
     display: flex;
-     position: relative;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -74,7 +68,7 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin-left:15px ;
+    margin-left: 15px;
   }
   .heart_menu {
     position: relative;
@@ -84,7 +78,7 @@
     font-size: 25px;
     padding-right: 30px;
   }
-    .bloc{
+  .bloc {
     width: 90%;
   }
   .button,
@@ -96,7 +90,4 @@
   .btn_bas {
     margin-left: 15%;
   }
-
 }
-
-

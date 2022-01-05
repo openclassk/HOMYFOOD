@@ -14,12 +14,15 @@
 
   /*container_reservation*/
   /*container_fonctionnement--*/
-
+.fonctionnement{
+  margin-left: 15px;
+}
   .fonctionnement__titre_h2 {
     margin-left: 5%;
   }
   .fonctionnement li {
-    width: 80%;
+    width: 90%;
+    
   }
   /*compteur fonctionnement ol pages d'aceuil------*/
   .fonctionnement ol {
@@ -36,26 +39,34 @@
   .restaurant__titre_h2 {
     margin-left: 9%;
   }
+ 
   /*carte1 2 3 4 */
+  /*restaurant*/
+  .carte{
+  /*justify-content: center;*/
+  height: auto;
+  width:100%;
+  /*margin-top: 10px;*/
+  }
+  .figure{
+    display: flex;
+    margin-bottom:25px ;
+  }
   .carte a figure {
     background-color: var(--colorwhite);
     height: 60%;
-    width: 350px;
+    width: 90%;
     margin-bottom: 50px;
+    margin: 0;
   }
 
   .carte a figcaption {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     height: 80px;
   }
-
-  /*-heart acceuil place*/
-  .heart {
-    position: static;
-    color: var(--colorblack);
-    font-size: var(--font-size3);
-    margin-left: 85%;
-    margin-top: -15%;
+  .nouveau{
+    top:35px;
+   left:30%;
   }
 
   /**************************************************************************************************/
@@ -65,7 +76,7 @@
     position: absolute;
     z-index: 1;
   }
-  .présentation_menu_global{
+  .présentation_menu_global {
     position: relative;
     z-index: 2;
     top: 210px;
@@ -92,8 +103,8 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 0px 15px ;
-    }
+    margin: 15px 15px; /*correction*/
+  }
   .titre_m {
     display: flex;
     padding-left: 5px;
@@ -112,34 +123,31 @@
     margin-right: 15px;
   }
 
-  .titre_p{
-    padding:0 ;
+  .titre_p {
+    padding: 0;
   }
   .button_cercle_animation {
-  position: relative;
-  background-color: var(--lightvert);
-  margin-right: -60px;
-  width: 60px;
-  border-radius: 0 15px 15px 0;
-  
+    position: relative;
+    background-color: var(--lightvert);
+    margin-right: -60px;
+    width: 60px;
+    border-radius: 0 15px 15px 0;
   }
   /*titre entree trait vert*/
- .titre_entree_plat_dessert{
-   margin-left: 0;
-   padding-left: 5px;
- }
- .bloc_btn{
-   margin-left: 0;
- }
-  .menu_description
- 
-  {
+  .titre_entree_plat_dessert {
+    margin-left: 0;
+    padding-left: 5px;
+  }
+  .bloc_btn {
+    margin-left: 0;
+  }
+  .menu_description {
     /*ajout 3 petits points*/
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     flex-grow: 1;
-    width:65%;
+    width: 65%;
   }
 
   .button,
@@ -153,90 +161,101 @@
 /**************************************************************************************/
 
 @media screen and (max-width: 350px) {
-/* action enlever dans body min et max widht*/
-body {
-  max-width: 250px;
-  min-width: none;
-}
-.bloc{
-  width:90%;
- 
-}
-/*restaurant acceuil*/
-.container_fonctionnement {
-  padding-left: 25px;
-}
-.restaurant__titre_h2 {
-  margin-left: 10%;
-}
-/* correction*/
-.carte a figure {
-  margin: 0;
-  margin-bottom: 20px;
-  height: 290px;
-  width: 270px;
-}
-.heart {
-  position: static;
-  color: var(--colorblack);
-  font-size: var(--font-size3);
-  margin-left: 85%;
-}
-/*les 4 pages restaurants*/
-.titre_menu{
-  margin: 0;
-}
-.titre_m {
-  display: flex;
-  padding-left:10px ;
-  font-size: 23px;
-}
+  /* action enlever dans body min et max widht*/
+  body {
+    max-width: 250px;
+    min-width: none;
+  }
+  .bloc {
+    width: 90%;
+  }
+  .fonctionnement{
+    margin-left: 0;
+  }
+  /*restaurant acceuil*/
+  .container_fonctionnement {
+    padding-left: 25px;
+  }
+  .fonctionnement li {
+    width: 90%;
+  }
+  .restaurant__titre_h2 {
+    margin-left: 10%;
+  }
+  /* correction*/
+  .carte a figure {
+    margin: 0;
+    margin-bottom: 20px;
+    height: 290px;
+    width: 270px;
+  }
+  .nouveau{
+    top:30px;
+    left:25% ;
+  }
+  /*les 4 pages restaurants*/
+  .titre_menu {
+    margin: 0;
+  }
+  .titre_m {
+    display: flex;
+    padding-left: 10px;
+    font-size: 23px;
+  }
 
-.titre_entree_plat_dessert {
+  .titre_entree_plat_dessert {
     margin-top: 20px;
     margin-left: 5px;
     font-weight: 300;
   }
-.heart_menu {
-  position: relative;
-  /*margin-left: 10%;*/
-}
-.presentation_img .img1 {
-  position: relative;
-  display: block;
-  display: flex;
-  top: 1px;
-  flex-direction: column;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center;
-  z-index: 1;
-  min-width: 250px;
-}
- .prix {
-  display: flex;
-  justify-content: stretch;
-  font-weight: 900;
-}
-.ensemble_menu{
-  margin-left: -15px;
-}
-.button_cercle_animation{
-position: relative;
-background-color: var(--lightvert);
-margin-right: -60px;
-width: 60px;
-border-radius: 0 15px 15px 0;
-}
-.presentation_menu{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0px ;
-}
-.menu_presentation{
-   right:0 ;
- left:0 ;
-}
+  .heart_menu {
+    position:relative;
+    margin-left: 10%;
+  }
+  .presentation_img .img1 {
+    position: relative;
+    display: block;
+    display: flex;
+    top: 1px;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    min-width: 250px;
+  }
+  .prix {
+    display: flex;
+    justify-content: stretch;
+    font-weight: 900;
+  }
+  .ensemble_menu {
+    margin-left: -15px;
+  }
+  .button_cercle_animation {
+    position: relative;
+    background-color: var(--lightvert);
+    margin-right: -60px;
+    width: 60px;
+    border-radius: 0 15px 15px 0;
+  }
+  .presentation_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 15px; /*correction*/
+  }
+  .menu_presentation {
+    right: 0;
+    left: 0;
+  }
+  .menu_description{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    width: 65%;
+    padding-left: 25px;
+  }
 }
