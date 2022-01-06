@@ -88,6 +88,7 @@
     background-color: var(--colorwhite);
   }
   .btn_bas {
-    margin-left: 15%;
+    margin-left: 15px;
+    width: 90%;
   }
 }

@@ -259,3 +259,9 @@
     padding-left: 25px;
   }
 }
+@media screen and (max-width: 280px) {
+
+.menu_presentation{
+  width: 300px;
+}
+}

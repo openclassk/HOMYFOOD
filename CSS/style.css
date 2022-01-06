@@ -309,6 +309,7 @@ body {
   box-shadow: 5px 3px 3px rgb(163, 159, 159);
   margin-top: 20px;
   height: auto;
+  overflow: hidden;
 }
 .menu_description,
 .titre_menu,
@@ -319,16 +320,27 @@ body {
   text-overflow: ellipsis;
   flex-grow: 1;
 }
+
 .ensemble_menu {
   display: flex;
   font-weight: 900;
-  overflow: hidden; /*element disparait*/
+  /*margin-right: 0px;*/
+ transition: margin-right 1s ;
 }
+/* hover sur la vignette*/
+.ensemble_menu:hover{
+  margin-right: 60px;
+  cursor: var(--cursor);
+  overflow: visible;
+  transition: margin-right 1s;
+}
+
 .menu_description {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 16px 5px;
 }
+
 /*titre_menu*/
 .titre_menu {
   font-size: 20px;
@@ -343,7 +355,7 @@ body {
   display: flex;
   align-items: flex-end;
   font-weight: 900;
-  padding: 16px;
+  padding: 16px 10px 16px 0;
 }
 .button_cercle_animation {
   position: relative;
@@ -351,18 +363,6 @@ body {
   margin-right: -60px;
   width: 60px;
   border-radius: 0 15px 15px 0;
-}
-
-/* hover sur la vignette*/
-.ensemble_menu::before :hover{
-  margin-right: 60px;
-  cursor: var(--cursor);
-  overflow: visible;
-  transition: margin-right 1000ms;
-}
-.ensemble_menu:hover{
-  margin-right: 0;
-  transition: margin-right 1000ms;
 }
 
 .button_cercle_animation {
@@ -381,5 +381,6 @@ body {
   align-items: center;
 }
 .btn_bas {
-  margin-right: 10%;
+  margin-left: 15px;
+  width: 80%;
 }

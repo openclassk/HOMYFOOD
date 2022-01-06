@@ -22,14 +22,7 @@
   --colorbackgroundheader: #a3a3a354;
   --backgroundlihover: #e9d9fa;
 }
-/*couleur gradient*/
-:root {
-  --lineargradienttablette: linear-gradient(
-    to top,
-    rgba(0, 255, 64, 0.733),
-    rgba(0, 0, 255, 0.5)
-  );
-}
+
 /*taille*/
 :root {
   --font-size1: 18px;
@@ -48,12 +41,13 @@
 }
 .btn {
   height: 45px;
-  width: 250px;
+  width: 70%;
+  max-width: 250px;
   align-items: center;
   background-image: linear-gradient(
-    to top,
-    rgba(255, 0, 242, 0.452),
-    rgba(0, 0, 255, 0.5)
+    to right,
+    rgba(255, 121, 218, 100),
+    rgba(147, 86, 220, 100)
   );
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 10px 10px -3px #ffa4c3;
